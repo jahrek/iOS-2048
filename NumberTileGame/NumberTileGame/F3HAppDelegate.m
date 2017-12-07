@@ -7,11 +7,14 @@
 //
 
 #import "F3HAppDelegate.h"
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @implementation F3HAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [BuddyBuildSDK setup];
+    
     // Override point for customization after application launch.
     return YES;
 }
